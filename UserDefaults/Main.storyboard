@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="3" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="20" y="86" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="20" y="86" width="51" height="20"/>
+                                </variation>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Token:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="8" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="20" y="132" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <rect key="frame" x="20" y="132" width="51" height="21"/>
+                                </variation>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Configuration" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="11" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="139" y="36" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <rect key="frame" x="103" y="35" width="104" height="20.5"/>
+                                </variation>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="14" translatesAutoresizingMaskIntoConstraints="NO" placeholder="No email saved">
+                                <rect key="frame" x="112" y="76" width="97" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <rect key="frame" x="79" y="76" width="200" height="30"/>
+                                    <mask key="constraints">
+                                        <include reference="18"/>
+                                    </mask>
+                                </variation>
+                                <constraints>
+                                    <constraint id="18" firstItem="14" firstAttribute="width" constant="49">
+                                        <variation key="heightClass=regular-widthClass=compact" constant="200"/>
+                                    </constraint>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="18"/>
+                                    </mask>
+                                </variation>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="15" translatesAutoresizingMaskIntoConstraints="NO" placeholder="No Token saved">
+                                <rect key="frame" x="79" y="130" width="97" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <rect key="frame" x="79" y="122.5" width="200" height="30"/>
+                                    <mask key="constraints">
+                                        <include reference="23"/>
+                                    </mask>
+                                </variation>
+                                <constraints>
+                                    <constraint id="23" firstItem="15" firstAttribute="width" constant="49">
+                                        <variation key="heightClass=regular-widthClass=compact" constant="200"/>
+                                    </constraint>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="23"/>
+                                    </mask>
+                                </variation>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="26" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="79" y="173" width="46" height="30"/>
+                                <state key="normal" title="Delete">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleColor" colorSpace="calibratedRGB" red="1" green="0" blue="0" alpha="1"/>
+                                </state>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <rect key="frame" x="79" y="172.5" width="80" height="30"/>
+                                    <mask key="constraints">
+                                        <include reference="30"/>
+                                    </mask>
+                                </variation>
+                                <constraints>
+                                    <constraint id="30" firstItem="26" firstAttribute="width" constant="46">
+                                        <variation key="heightClass=regular-widthClass=compact" constant="80"/>
+                                    </constraint>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="30"/>
+                                    </mask>
+                                </variation>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="27" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="233" y="173" width="46" height="30"/>
+                                <state key="normal" title="Save">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleColor" colorSpace="calibratedRGB" red="0" green="1" blue="0" alpha="1"/>
+                                </state>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <rect key="frame" x="199" y="172" width="80" height="30"/>
+                                    <mask key="constraints">
+                                        <include reference="33"/>
+                                    </mask>
+                                </variation>
+                                <constraints>
+                                    <constraint id="33" firstItem="27" firstAttribute="width" constant="46">
+                                        <variation key="heightClass=regular-widthClass=compact" constant="80"/>
+                                    </constraint>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="33"/>
+                                    </mask>
+                                </variation>
+                            </button>
+                        </subviews>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="3"/>
+                                <exclude reference="8"/>
+                                <exclude reference="11"/>
+                                <exclude reference="14"/>
+                                <exclude reference="15"/>
+                                <exclude reference="26"/>
+                                <exclude reference="27"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="6"/>
+                                <exclude reference="7"/>
+                                <exclude reference="9"/>
+                                <exclude reference="10"/>
+                                <exclude reference="12"/>
+                                <exclude reference="13"/>
+                                <exclude reference="17"/>
+                                <exclude reference="19"/>
+                                <exclude reference="20"/>
+                                <exclude reference="25"/>
+                                <exclude reference="28"/>
+                                <exclude reference="29"/>
+                                <exclude reference="32"/>
+                                <exclude reference="34"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="3"/>
+                                <include reference="8"/>
+                                <include reference="11"/>
+                                <include reference="14"/>
+                                <include reference="15"/>
+                                <include reference="26"/>
+                                <include reference="27"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="6"/>
+                                <include reference="7"/>
+                                <include reference="9"/>
+                                <include reference="10"/>
+                                <include reference="12"/>
+                                <include reference="13"/>
+                                <include reference="17"/>
+                                <include reference="19"/>
+                                <include reference="20"/>
+                                <include reference="25"/>
+                                <include reference="28"/>
+                                <include reference="29"/>
+                                <include reference="32"/>
+                                <include reference="34"/>
+                            </mask>
+                        </variation>
+                        <constraints>
+                            <constraint id="6" firstItem="3" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="66"/>
+                            <constraint id="7" firstItem="3" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20"/>
+                            <constraint id="9" firstItem="8" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20"/>
+                            <constraint id="10" firstItem="8" firstAttribute="top" secondItem="3" secondAttribute="bottom" constant="26"/>
+                            <constraint id="12" firstItem="11" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="15"/>
+                            <constraint id="13" firstItem="11" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="103"/>
+                            <constraint id="17" firstItem="14" firstAttribute="top" secondItem="11" secondAttribute="bottom" constant="20"/>
+                            <constraint id="19" firstItem="15" firstAttribute="leading" secondItem="8" secondAttribute="trailing" constant="8"/>
+                            <constraint id="20" firstItem="15" firstAttribute="top" secondItem="14" secondAttribute="bottom" constant="17"/>
+                            <constraint id="25" firstItem="14" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="79"/>
+                            <constraint id="28" firstItem="26" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="79"/>
+                            <constraint id="29" firstItem="26" firstAttribute="top" secondItem="15" secondAttribute="bottom" constant="20"/>
+                            <constraint id="32" firstItem="27" firstAttribute="top" secondItem="15" secondAttribute="bottom" constant="20"/>
+                            <constraint id="34" firstItem="27" firstAttribute="leading" secondItem="26" secondAttribute="trailing" constant="40"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="txtEmail" destination="14" id="name-outlet-14"/>
+                        <outlet property="txtToken" destination="15" id="name-outlet-15"/>
+                        <outlet property="btnDelete" destination="26" id="name-outlet-26"/>
+                        <outlet property="btnSave" destination="27" id="name-outlet-27"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="0.0" y="0.0"/>
+        </scene>
+    </scenes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>
